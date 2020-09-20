@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\usepackage{fullpage}
+\addtolength{\voffset}{-0.25cm}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Antonio \textsc{Coín Castro}}\bigskip\par} % Your name
+
+\section{personal data}
+
+\begin{tabular}{rl}
+\textsc{email:} & \href{mailto:antoniocoin07@gmail.com}{\texttt{antoniocoin07@gmail.com}}\\
+\textsc{github:} &
+\href{https://github.com/antcc}{\texttt{github.com/antcc}}\\
+\textsc{linkedin:} &
+\href{https://linkedin.com/in/antoniocoin}{\texttt{linkedin.com/in/antoniocoin}}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{tabular}{rl}
+2020-2022 & msc. in data science\\
+\footnotesize{\emph{Current}} & \textbf{Universidad Autónoma de Madrid}, spain\\
+%&\normalsize \textsc{current average grade}: 9.07/10\\
+%& 47\% \small\emph{subjects with Honours}\\
+\end{tabular}
+
+\begin{tabular}{rl}
+2015-2020 & double degree in computer science and mathematics\\
+& \textbf{Universidad de Granada}, spain\\
+&\normalsize \textsc{average grade}: 9.07/10\\
+& 47\% \small\emph{subjects with Honours}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{projects and communities}
+
+\begin{tabular}{r|p{11cm}}
+bachelor's thesis  & fuzzy systems for big data computing\\
+\footnotesize{(computer science)} & \footnotesize{design and implementation in apache spark of a number of scalable fuzzy techniques for solving learning and modelling problems in a big data context.}\\
+& \footnotesize{\href{https://github.com/antcc/fuzzyspark}{\texttt{github.com/antcc/fuzzyspark}}}\\
+\multicolumn{2}{c}{} \\
+
+bachelor's thesis & implicit differential equations\\
+\footnotesize{(mathematics)} & \footnotesize{theoretical study on implicit differential equations $F(x, y, y')=0$ not solved for $y'$, providing general conditions for their treatment.}\\
+& \footnotesize{\href{https://github.com/antcc/tfg}{\texttt{github.com/antcc/tfg}}}\\
+\multicolumn{2}{c}{} \\
+
+computer vision & face detection with deep learning\\
+& \footnotesize{practical application of transfer learning with a yolov3 convolutional neural network to perform face detection on a new dataset.}\\
+& \footnotesize{\href{https://github.com/antcc/proyecto-vc}{\texttt{github.com/antcc/proyecto-vc}}}\\
+\multicolumn{2}{c}{} \\
+
+%metaheuristics & feature weight learning\\
+%& \footnotesize{implementation of different metaheuristics to quantify the importance of a set of features in a classification problem, including genetic and probabilistic algorithms.}\\
+%& \footnotesize{\href{https://github.com/antcc/practicas-mh}{\texttt{github.com/antcc/practicas-mh}}}\\
+%\multicolumn{2}{c}{} \\
+
+outreach & member and collaborator of libreim\\
+& \footnotesize{helped write and correct notes on several subjects taught at the university of granada for libreim, a nonprofit organization aimed at the popularization of mathematics and computer science, especially focused on free software and knowledge.}\\
+& \footnotesize{\href{https://libreim.github.io/}{\texttt{libreim.github.io}}}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{scholarships and certificates}
+
+\begin{tabular}{rl}
+2019 & ugr best academic record scholarship\\
+2017 & cambridge cae grade a \footnotesize{(cefr level c2)}\\
+%2017 & ugr best academic record scholarship\\
+2015 & best university access grade in the province of málaga \footnotesize{(13.88/14)}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{languages}
+
+\begin{tabular}{rl}
+\textsc{spanish:} & mother tongue\\
+\textsc{english:} & fluent\\
+\textsc{french:} & basic understanding\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{skills}
+
+\begin{tabular}{rl}
+advanced knowledge: & \textsc{c++}, \textsc{python}, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+
+intermediate knowledge: & c, java, keras, r, scala, spark, linux, git\\
+
+basic knowledge: & html, css, javascript, opencv\\
+\end{tabular}
+\enlargethispage{\textwidth}
+\section{interests}
+\vspace{.3em}
+technology, programming, open-source, shared knowledge, applied mathematics,\\
+machine learning, deep learning, statistical techniques, computer vision
+
+\end{document}
